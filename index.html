@@ -1,20 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" data-framework="backbonejs">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Backbone.js • TodoMVC</title>
-    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <link rel="stylesheet" href="node_modules/todomvc-app-css/index.css" />
   </head>
 
   <body>
     <section class="todoapp">
       <header class="header">
         <h1>todos</h1>
-        <input class="new-todo" placeholder="What needs to be done?" autofocus>
+        <input
+          class="new-todo"
+          placeholder="What needs to be done?"
+          autofocus
+        />
       </header>
 
       <section class="main">
-        <ul class="todo-list" ></ul>
+        <ul class="todo-list"></ul>
+        <button class="mark-all-complete">Mark All Completed</button>
       </section>
 
       <footer class="footer"></footer>
@@ -25,10 +30,9 @@
         <input class="toggle" type="checkbox" {{#if completed}} checked {{/if}}>
         <label>{{ title }}</label>
         <button class="destroy"></button>
-      </div>  
+      </div>
     </script>
 
-    <script src="node_modules/todomvc-common/base.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
     <script src="node_modules/underscore/underscore.js"></script>
